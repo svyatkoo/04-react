@@ -4,8 +4,6 @@ import Posts from "./components/posts/posts";
 import Comments from "./components/comments/comments";
 
 
-
-
 function App() {
   return (
     <div className="App">
@@ -15,8 +13,6 @@ function App() {
         </div>
 
         <Comments />
-
-
     </div>
   );
 }
