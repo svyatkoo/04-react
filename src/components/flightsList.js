@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import FlightItem from "./flightItem";
 
+
 function FlightsList () {
     const [flightsList, setFlightsList] = useState([]);
 
