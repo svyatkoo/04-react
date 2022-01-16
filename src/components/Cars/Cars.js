@@ -1,20 +1,9 @@
-import React, {useEffect, useState} from 'react';
 import Car from "../Car/Car";
-import {carsService} from "../services/cars.service";
+import "./cars.css";
 
-
-const Cars = ({trigger}) => {
-    console.log("777777777777");
-    console.log(trigger);
-    console.log("777777777777");
-    const [cars, setCars] = useState([]);
-
-    useEffect(() => {
-        carsService.getAll.then(value => setCars([...value]))
-    }, [trigger])
-
+const Cars = ({cars}) => {
     return (
-        <div>
+        <div className="carsWrap">
             {cars.map(car => <Car key={car.id} car={car}/>)}
         </div>
     );

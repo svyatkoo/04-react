@@ -24,10 +24,10 @@ const Form = ({update}) => {
 
     // watch(event => console.log(event))
 
-    const updateById = (car) => {
-        const updatedCar = carsService.updateById(car.id, car);
-        update(updatedCar);
-    }
+    // const updateById = (car) => {
+    //     const updatedCar = carsService.updateById(car.id, car);
+    //     update(updatedCar);
+    // }
 
     return (
         <div className={css.xxx}>

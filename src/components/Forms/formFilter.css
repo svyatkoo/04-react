@@ -1,0 +1,15 @@
+.formFilterWrap {
+    background: cornflowerblue;
+
+    padding: 30px;
+}
+
+.formFilterWrap form {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.formFilterWrap h1 {
+    text-align: center;
+}
