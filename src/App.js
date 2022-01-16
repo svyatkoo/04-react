@@ -20,12 +20,9 @@ function App() {
     }
 
     useEffect(() => {
-        carsService.getAll.then(value => {
+        carsService.getAll().then(value => {
             setCars([...value]);
             setFilteredCars([...value]);
-            console.log("trigger");
-            console.log(trigger);
-            console.log("trigger");
         })
     }, [trigger]);
 
