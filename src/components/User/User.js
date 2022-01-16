@@ -10,6 +10,6 @@ const User = (props) => {
             <button onClick={() => getUserId(user.id)}>GetDetails</button>
         </div>
     );
-};
+}
 
 export default User;
