@@ -6,9 +6,13 @@ import css from "../../App.module.css";
 const FormUpdate = ({update}) => {
     const {register, handleSubmit} = useForm()
 
-    const updateById = (car) => {
-        const updatedCar = carsService.updateById(car.id, car);
-        update(updatedCar);
+    const updateById = async (car) => {
+        try {
+            const updatedCar = await carsService.updateById(car.id, car)
+            update(updatedCar)
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (
