@@ -15,7 +15,5 @@ export const carValidator = Joi.object({
         "number.min":"The year must be greater then 1900",
         "number.max":"The price must be less then current year",
     }),
-    id:Joi.number().min(0).required().messages({
-        "number.min":"Id must be greater then 0"
-    })
+    // id: Joi.number().not()
 })

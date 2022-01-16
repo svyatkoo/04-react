@@ -3,7 +3,10 @@ import Car from "../Car/Car";
 import {carsService} from "../services/cars.service";
 
 
-const Cars = (trigger) => {
+const Cars = ({trigger}) => {
+    console.log("777777777777");
+    console.log(trigger);
+    console.log("777777777777");
     const [cars, setCars] = useState([]);
 
     useEffect(() => {

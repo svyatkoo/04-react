@@ -1,57 +1,26 @@
-import React, {useState} from 'react';
 import {useForm} from "react-hook-form";
-import {joiResolver} from "@hookform/resolvers/joi/dist/joi";
-import {carValidator} from "../validators/car.validator";
+
 import {carsService} from "../services/cars.service";
+import css from "../../App.module.css";
 
 const FormRemove = ({update}) => {
-    // const [formError, setFormError] = useState({});
+    const {register, formState: {errors}} = useForm();
 
-    const {
-        register, handleSubmit, formState: {errors}
-    } = useForm({resolver: joiResolver(carValidator), mode: "onTouched"}
-    );
-
-
-    const removeById = async (id) => {
-        try {
-            // const removedCar = await carsService.delateById(id);
-            console.log(id);
-            // update(removedCar);
-        } catch (error) {
-            // setFormError(error.response.data)
-        }
-    }
-
-    // const formInfo = (e) => {
-    //     const eData = {...form, [e.target.name]: e.target.value}
-    //     setForm({...setForm, ...eData})
-    //     // getFilter(eData)
-    // }
-    const [form, setForm] = useState({id: ""})
-    const formInfo = (e) => {
-        const eData = {...form, [e.target.name]: e.target.value}
-        setForm({...eData})
-        // getFilter(eData)
-    }
-
-    const onSubmit = (e) => {
+    const deleteById = async (e) => {
         e.preventDefault();
-        const eData = {[e.target.name]: e.target.value}
-        console.log(eData);
-
-        console.log(e.target.value);
+        const deletedCar = await carsService.delateById(e.target.form.id.value);
+        // console.log(deletedCar);
+        update(deletedCar);
     }
 
     return (
-        <div>
-            <hr/>
-            <form onSubmit={handleSubmit(onSubmit)}>
+        <div className={css.xxx}>
+            <h1>Delete car</h1>
+            <form className={css.formWrapper}>
                 <div><label>Id:<input type="text" defaultValue={""} {...register("id")}/></label></div>
                 {errors.id && <span>{errors.id.message}</span>}
-                <button onClick={handleSubmit(removeById)}>Save</button>
+                <button onClick={deleteById}>Delete</button>
             </form>
-            <hr/>
         </div>
     );
 };
