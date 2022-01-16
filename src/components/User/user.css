@@ -1,0 +1,13 @@
+.userContainer {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 5px;
+    padding: 2px 15px;
+    border: 2px solid azure;
+    background: silver;
+    /*background: deepskyblue;*/
+}

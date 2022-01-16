@@ -1,0 +1,19 @@
+
+.usersBody {
+    display: flex;
+    justify-content: normal;
+    column-gap: 16%;
+}
+
+.usersWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.usersWrapper h1 {
+    text-align: center;
+    font-size: 20px;
+}
+

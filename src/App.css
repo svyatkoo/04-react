@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    font-size: 12px;
+}
+
+.App {
+    background: cornflowerblue;
+    padding: 30px;
+}
+
