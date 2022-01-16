@@ -1,8 +1,10 @@
 import "./usersDetails.css";
 
 const UserDetails = ({user, getUserPosts}) => {
-    const {id, name, username, email, phone,
-            website, company, address} = user;
+    const {
+        id, name, username, email, phone,
+        website, company, address
+    } = user;
 
     return (
         <div className="userDetailsWrapper">

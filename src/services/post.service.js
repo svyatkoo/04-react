@@ -2,7 +2,7 @@
 
 const getByUser = (id) => {
     // return fetch(`${urls.users}/${id}/posts`)
-    return fetch("https://jsonplaceholder.typicode.com/users/"+id.id+"/posts")
+    return fetch("https://jsonplaceholder.typicode.com/users/" + id.id + "/posts")
         .then(value => value.json())
 }
 

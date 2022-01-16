@@ -8,10 +8,11 @@ import "./users.css";
 const Users = ({getUserPosts}) => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-            userService.getAll().then(value => setUsers(value))
+        userService.getAll().then(value => setUsers(value))
     }, [])
 
     const [user, setUser] = useState(null);
+
     function getUserId(id) {
         userService.getById(id).then(value => setUser(value))
     }
