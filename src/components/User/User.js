@@ -17,7 +17,7 @@ const User = () => {
             return;
         }
         userServise.getById(id).then(value => setUsers({...value}))
-    }, [user.id])
+    }, [id])
 
     return (
         <div className="userBox">
