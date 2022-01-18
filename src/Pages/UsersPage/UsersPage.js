@@ -9,15 +9,11 @@ import {useLocation} from "react-router-dom";
 
 const UsersPage = () => {
     const {state} = useLocation();
-    console.log("show");
-    console.log(state);
 
     const [users, setUsers] = useState([]);
     useEffect(()=> {
         userServise.getAll().then(value => setUsers(value))
     }, [])
-
-
 
     return (
         <div className="wrapper">
