@@ -13,8 +13,6 @@ const UserPosts = () => {
         userServise.getAllPosts(id).then(value => setUserPosts([...value]))
     },[id])
 
-    console.log(userPosts);
-
     return (
         <div className="userPostsWrapper">
             {userPosts.map(post => <UserPost key={post.id} post={post} />)}

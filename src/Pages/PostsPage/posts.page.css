@@ -1,0 +1,18 @@
+.postsPageWrapper {
+    display: flex;
+    /*justify-content: space-between;*/
+    column-gap: 50px;
+}
+
+.postsPageLeft {
+    min-width: 40%;
+    padding: 30px;
+}
+
+.postsPageLeft h1 {
+    text-align: center;
+}
+
+.postsPageLeft {
+    padding: 30px;
+}

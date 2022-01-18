@@ -1,0 +1,12 @@
+.postDetails {
+    border-bottom: 2px solid azure;
+    margin-bottom: 20px;
+}
+
+.postDetails h1 {
+    text-align: center;
+}
+
+.postDetails button {
+    margin: 20px;
+}
