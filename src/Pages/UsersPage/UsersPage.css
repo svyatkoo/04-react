@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    column-gap: 50px;
+    background-color: deepskyblue;
+    padding: 20px;
+
+}
+
+.mainLeft {
+    width: 50%;
+    /*border: 2px solid azure;*/
+    padding: 10px;
+}
+
+.mainLeft h1 {
+    text-align: center;
+}
+
+.mainRight {
+    width: 50%;
+}

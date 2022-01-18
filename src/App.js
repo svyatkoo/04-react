@@ -1,22 +1,31 @@
 import './App.css';
-import {Routes, Route} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
+
 import Layout from "./components/Layout/Layout";
 import UsersPage from "./Pages/UsersPage/UsersPage";
 import PostsPage from "./Pages/PostsPage/PostsPage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
+import User from "./components/User/User";
+import HomePage from "./Pages/HomePage/HomePage";
+import UserPosts from "./components/UserPosts/UserPosts";
 
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route path={"/"} element={<Layout/>}>
-          <Route path={"users"} element={<UsersPage/>}/>
-          <Route path={"posts"} element={<PostsPage/>}/>
-          <Route path={"*"} element={<NotFoundPage/>}/>
-        </Route>
-      </Routes>
-    </>
-  );
+    return (
+        <>
+            <Routes>
+                <Route path={"/"} element={<Layout/>}>
+                    <Route index element={<HomePage/>}/>
+                    <Route path={"users"} element={<UsersPage/>}>
+                        <Route path={":id/"} element={<User/>}/>
+                        <Route path={":id/:posts"} element={<UserPosts/>}/>
+                    </Route>
+
+                    <Route path={"posts"} element={<PostsPage/>}/>
+                    <Route path={"*"} element={<NotFoundPage/>}/>
+                </Route>
+            </Routes>
+        </>
+    );
 }
 
 export default App;

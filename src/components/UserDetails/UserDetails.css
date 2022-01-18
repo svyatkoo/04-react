@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+.userDetailsWrapper {
+    width: 400px;
+}
+
+.userDetailsWrapper h1 {
+    text-align: center;
+}
+
+.detailsInfo {
+
+}

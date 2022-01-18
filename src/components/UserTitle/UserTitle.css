@@ -1,0 +1,9 @@
+.userTitle {
+    font-size: 26px;
+
+}
+
+.userTitle a {
+    text-decoration: none;
+    color: black;
+}

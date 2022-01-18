@@ -1,0 +1,9 @@
+.userBox {
+    border-left: 2px solid azure;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.userBox button {
+    margin-top: 10px;
+}

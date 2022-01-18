@@ -1,9 +1,7 @@
-import React from 'react';
-
 const PostsPage = () => {
     return (
         <div>
-            PostsPage
+            <h1>PostsPage</h1>
         </div>
     );
 };

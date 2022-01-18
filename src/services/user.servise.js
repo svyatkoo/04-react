@@ -3,5 +3,6 @@ import {urls} from "../configs/urls";
 
 export const userServise = {
     getAll:()=> axiosService(urls.users).then(value => value.data),
-    getById:(id) => axiosService(`${urls.users}/${id}`).then(value => value.data)
+    getById:(id) => axiosService(`${urls.users}/${id}`).then(value => value.data),
+    getAllPosts:(id) => axiosService(`${urls.users}/${id}/posts`).then(value => value.data),
 }
