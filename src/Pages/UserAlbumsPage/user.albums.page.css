@@ -1,0 +1,14 @@
+.albumsWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.albumsWrapper p {
+    margin: 0;
+}
+
+.albumsWrapper h1 {
+    text-align: center;
+}
+

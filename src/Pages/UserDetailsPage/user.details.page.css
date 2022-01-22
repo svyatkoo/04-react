@@ -1,0 +1,11 @@
+.userDetailsWrapper p, ul {
+    margin: 0;
+}
+
+.detailsInfoWrapper {
+    margin-bottom: 20px;
+}
+
+.detailsInfo {
+    margin-bottom: 10px;
+}

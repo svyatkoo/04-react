@@ -1,0 +1,17 @@
+.wrapper {
+    display: flex;
+    column-gap: 50px;
+}
+
+.mainLeft {
+    width: 50%;
+    padding: 10px;
+}
+
+.mainLeft h1 {
+    text-align: center;
+}
+
+.mainRight {
+    width: 50%;
+}
